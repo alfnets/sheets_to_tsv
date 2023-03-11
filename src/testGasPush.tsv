@@ -1,3 +1,5 @@
 name	check
-hoge	TRUE
-foo	FALSE
+hoge	false
+foo	true
+bar	false
+piyo	true
