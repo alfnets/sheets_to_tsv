@@ -27,7 +27,7 @@ Google Apps Script を使用して Google Sheets を TSV に変換したもの�
 - ファイルを編集する
 - メニューバー の `Custom Menu` から `Convert to TSV and push to GitHub` を実行
 - 本リポジトリに Pull Request が作成されていることを確認
-  - 実行する アクセストークン は alfnets のものであるため、いたずらに連続で実行することは禁止
+  - 検証以外の目的でいたずらに連続で実行することは禁止
 
 # Author
 あるふ (alf)
