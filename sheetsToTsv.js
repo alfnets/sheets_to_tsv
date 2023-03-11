@@ -106,5 +106,16 @@ function createNewBranchPushAndCreatePullRequest() {
 }
 
 function convertToTSV(values) {
-  return values.map((row) => row.join("\t")).join("\n");
+  return values
+    .map((row) =>
+      row
+        .map((cell) => {
+          if (typeof cell === "boolean") {
+            return cell ? "TRUE" : "FALSE";
+          }
+          return cell;
+        })
+        .join("\t")
+    )
+    .join("\n");
 }
