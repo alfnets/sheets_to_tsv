@@ -1,4 +1,4 @@
-# sheets_to_tsv
+# gas-gsheet2tsv-github
 Google Apps Script を使用して Google Sheets を TSV に変換したものを GitHub上のリポジトリに commit & push し、Pull Request を作成してくれます。また、フローは GitHub Flow に則り、commit & push する前に新しい ブランチ を作成してくます。これにより、i18n（多言語）対応などを Google Sheets で簡単に管理し、GitHub上のリポジトリにも反映することが可能となります。
 
 # Usage
