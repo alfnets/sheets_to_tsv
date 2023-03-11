@@ -33,5 +33,5 @@ Google Apps Script を使用して Google Sheets を TSV に変換したもの�
 あるふ (alf)
 
 # ライセンス
-This software is released under the MIT License, see LICENSE.
+This software is released under the MIT License, see LICENSE.<br>
 https://opensource.org/licenses/mit-license.php
