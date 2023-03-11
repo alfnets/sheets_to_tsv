@@ -21,8 +21,8 @@ function createNewBranchPushAndCreatePullRequest() {
 
   // リポジトリのオーナー名とリポジトリ名、ターゲットとなるファイルパスを指定
   const repoOwner = "alfnets";
-  const repoName = "test_gas_push";
-  const fileName = "test_gas_push";
+  const repoName = "sheets_to_tsv";
+  const fileName = "testGasPush";
   const filePath = `src/${fileName}.tsv`;
 
   const sheet = SpreadsheetApp.getActiveSheet();
