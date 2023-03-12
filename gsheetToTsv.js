@@ -28,15 +28,19 @@ function createNewBranchPushAndCreatePullRequest() {
   const sheet = SpreadsheetApp.getActiveSheet();
   const sheetAsCSV = convertToTSV(sheet.getDataRange().getValues());
 
+  const currentDateTime = getCurrentDateTime();
+
   // create a new branch
-  const newBranchName = `update_${fileName}_${new Date().getTime()}`;
-  const url = `https://api.github.com/repos/${repoOwner}/${repoName}/git/refs/heads/main`;
+  const newBranchName = `update_${fileName}_${currentDateTime}`;
   const mainBranch = JSON.parse(
-    UrlFetchApp.fetch(url, {
-      headers: {
-        Authorization: `Bearer ${GITHUB_TOKEN}`,
-      },
-    }).getContentText()
+    UrlFetchApp.fetch(
+      `https://api.github.com/repos/${repoOwner}/${repoName}/git/refs/heads/main`,
+      {
+        headers: {
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
+        },
+      }
+    ).getContentText()
   );
 
   UrlFetchApp.fetch(
@@ -55,7 +59,7 @@ function createNewBranchPushAndCreatePullRequest() {
   );
 
   // commit and push to new branch
-  const commitMessage = `Update ${fileName} in ${new Date().toLocaleDateString()}`;
+  const commitMessage = `Update ${fileName} in ${currentDateTime}`;
   const content = JSON.parse(
     UrlFetchApp.fetch(
       `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`,
@@ -118,4 +122,18 @@ function convertToTSV(values) {
         .join("\t")
     )
     .join("\n");
+}
+
+function getCurrentDateTime() {
+  return new Date()
+    .toLocaleDateString("ja-JP", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour12: false,
+      hour: "2-digit",
+      minute: "2-digit",
+    })
+    .split(/[/ :]/)
+    .join("");
 }
