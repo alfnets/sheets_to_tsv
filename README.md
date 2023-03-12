@@ -3,9 +3,9 @@ Google Apps Script を使用して Google Sheets を TSV に変換したもの�
 
 # Usage
 - GitHub の アクセストークン を発行する（権限は必要最小限にすることを推奨）
-- TSVで管理したいファイルを Google Sheets で作成
+- TSV で管理したいファイルを Google Sheets で作成
 - 作成した Google Sheets で Apps Script のエディタを開く
-- `sheets_to_tsv.js` のコードを貼り付ける
+- [gsheet2Tsv.jp https://github.com/alfnets/gas-gsheet2tsv-github/blob/main/gsheetToTsv.js] のコードを貼り付ける
 - 発行した GitHub の アクセストークン を用いて setup関数 を一度だけ実行する
 - setup関数 をコメントアウトする
 - 必要なパラメータをコード内に設定する
