@@ -1,5 +1,6 @@
 name	check
 hoge	FALSE
-foo	TRUE
+foo	FALSE
 bar	FALSE
 Piyo	TRUE
+upa	TRUE
