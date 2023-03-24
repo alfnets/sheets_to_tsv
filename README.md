@@ -33,6 +33,6 @@ Google Apps Script を使用して Google Sheets を TSV に変換したもの�
 あるふ (alf)
 
 # License
-Copyright (c) 2022 あるふ (alf).<br>
+Copyright (c) 2023 あるふ (alf).<br>
 This software is released under the MIT License, see LICENSE.<br>
 https://opensource.org/licenses/mit-license.php
