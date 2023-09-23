@@ -22,13 +22,6 @@ Google Apps Script を使用して Google Sheets を TSV に変換したもの�
 - 作成した Google Sheets を開き直す
 - メニューに追加された `Custom Menu` から `Convert to TSV and push to GitHub` を実行
 
-# Demo
-- [デモファイル](https://docs.google.com/spreadsheets/d/1wOVgwXeu_E7bvrr2IBxzh9EN73IjsuC1nHtgU9E4-Bw/edit?usp=sharing) にアクセス
-- ファイルを編集する
-- メニューバー の `Custom Menu` から `Convert to TSV and push to GitHub` を実行
-- 本リポジトリに Pull Request が作成されていることを確認
-  - 検証以外の目的でいたずらに連続で実行することは禁止
-
 # Author
 あるふ (alf)
 
